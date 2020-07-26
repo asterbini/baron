@@ -13,7 +13,7 @@ KEYWORDS = ("and", "as", "assert", "break", "class", "continue", "def", "del",
             "yield")
 
 TOKENS = (
-    (r'[a-zA-Z_][a-zA-Z_àèìòùé]*', 'NAME'),
+    (r'[a-zàèìòùéA-Z_][a-zA-Z0-9_àèìòùé]*', 'NAME'),
     (r'0', 'INT'),
     (r'[-+]?\d+[eE][-+]?\d+[jJ]', 'FLOAT_EXPONANT_COMPLEX'),
     (r'[-+]?\d+.\d?[eE][-+]?\d+[jJ]', 'FLOAT_EXPONANT_COMPLEX'),
